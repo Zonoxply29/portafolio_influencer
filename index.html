@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Influencer</title>
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel/dist/assets/owl.theme.default.min.css">
+
+    <!--Boostrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--Plyr Video Player-->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fuente para el titulo "PETFLUENCER & LIFESTYLE"-->
+    <link rel="stylesheet" href="https://use.typekit.net/gpm8uor.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid px-4 px-lg-5">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold fs-4 me-3" href="#"><span class="dot">Lía</span>Garrido</a>
+
+            <!-- Botón hamburguesa para colapsar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estadisticas">Mi alcance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Fotos y Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#colaboraciones">Colaboraciones</a></li>
+                </ul>
+                <div class="d-flex justify-content-center justify-content-lg-end mt-3 mt-lg-0 ms-lg-3">
+                    <a href="#precios" class="btn btn-follow">Precios y Paquetes</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-3" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Columna Izquierda: Texto -->
+                <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+                    <div class="col-lg-6 text-center text-lg-start position-relative mb-5 mb-lg-0">
+                        <p class="text-hi text-pink mb-2 fs-2 position-relative" data-aos="fade-up">Hola, me
+                            presento...</p>
+                        <div class="flower-wrapper" data-aos="fade-up">
+                            <img src="./img/cabeza_flor.PNG" alt="decoración" class="flower">
+                        </div>
+                        <div class="hero-title mb-3" data-aos="fade-up">
+                            <h1 class="title-container">
+                                <span class="name-title">LÍA GARRIDO</span> <br>
+                                <span class="petfluencer-title">PETFLUENCER & LIFESTYLE</span>
+                            </h1>
+                        </div>
+                        <p class="hero-description mb-4" data-aos="fade-up" data-aos-delay="100">
+                            Soy <b>Lía Garrido</b>, me gusta llamarme “petfluencer” pues me dedico a la creación de
+                            contenido sobre etología canina y felina,
+                            con el fin de ayudar a todos los amantes de los animales a entender el lenguaje de nuestras
+                            mascotas para una sana convivencia.
+                            También, hago contenido sobre estilo de vida para conocernos un poco más.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3"
+                        data-aos="zoom-in" data-aos-delay="200">
+                        <a href="#estadisticas" class="btn btn-follow">Mis estadísticas</a>
+                        <a href="#colaboraciones" class="btn btn-follow">Colaboraciones</a>
+                    </div>
+                    <!-- Redes Sociales -->
+                    <div class="social-section mt-5 text-lg-start">
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <svg class="wave-deco-svg" width="200" height="20" viewBox="0 0 200 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 10 
+             Q 12.5 0, 25 10 
+             T 50 10 
+             T 75 10 
+             T 100 10 
+             T 125 10 
+             T 150 10 
+             T 175 10 
+             T 200 10" stroke="#ff6e84" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="social-text text-center text-lg-start mb-3">
+                        Conecta conmigo <span class="social-line"></span>
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
+                        <a href="https://www.instagram.com/soyliagarrido/" target="_blank" class="social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@soyliagarrido?is_from_webapp=1&sender_device=pc"
+                            target="_blank" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Imagen e íconos -->
+                <div
+                    class="col-lg-6 d-flex flex-column justify-content-start align-items-center position-relative bg-influencer">
+                    <div class="influencer-box position-relative">
+                        <!-- Fondo ovalado -->
+                        <div class="oval-bg"></div>
+
+                        <!-- Imagen principal -->
+                        <img src="./img/lia_garrido1.PNG" alt="influencer" class="influencer-img">
+
+                        <!-- Líneas decorativas tipo marco -->
+                        <div class="corner-line top-left"></div>
+                        <div class="corner-line top-right"></div>
+                        <div class="corner-line bottom-left"></div>
+                        <div class="corner-line bottom-right"></div>
+
+                        <p class="influencer-name">Lía Garrido</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN ESTADÍSTICAS-->
+    <section class="stats-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Mi Número de Seguidores Actuales</h2>
+            <div class="row g-4 justify-content-center">
+
+                <!-- TIKTOK -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stats-card p-4 h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-tiktok fs-4 text-dark"></i> @soyliagarrido
+                        </div>
+                        <h3 class="fw-bold display-6">
+                            <span id="count-tiktok">0</span><span class="text-pink">k</span>
+                        </h3>
+                        <p class="subtitle text-pink mb-3">Tiktok Followers</p>
+                        <p class="desc small">Soy activa creando contenido sobre animales y estilo de vida </p>
+                        <div class="tiktok-wrapper">
+                            <div class="tiktok-placeholder">
+                                <div class="tiktok-loading">
+                                    <i class="bi bi-tiktok fs-1 text-dark mb-2"></i>
+                                    <p class="small text-muted">Cargando contenido...</p>
+                                </div>
+                            </div>
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@soyliagarrido"
+                                data-unique-id="soyliagarrido" data-embed-type="creator" style="display: none;">
+                                <section>
+                                    <a target="_blank"
+                                        href="https://www.tiktok.com/@soyliagarrido?refer=creator_embed">@soyliagarrido</a>
+                                </section>
+                            </blockquote>
+                        </div>
+                        <a href="https://www.tiktok.com/@soyliagarrido?is_from_webapp=1&sender_device=pc"
+                            target="_blank" class="btn btn-follow mt-3">Sígueme</a>
+                    </div>
+                </div>
+
+                <!-- INSTAGRAM -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-card p-4 h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-instagram fs-4 text-danger"></i> @soyliagarrido
+                        </div>
+                        <h3 class="fw-bold display-6">
+                            <span id="count-instagram">0</span><span class="text-pink">k</span>
+                        </h3>
+                        <p class="subtitle text-pink mb-3">Instagram Followers</p>
+                        <p class="desc small">Comparto fotos con mis mascotas, salidas a restaurantes o bares ,
+                            reels sobre animales y recomendaciones</p>
+                        <div class="instagram-wrapper">
+                            <div class="instagram-placeholder">
+                                <div class="instagram-loading">
+                                    <i class="bi bi-instagram fs-1 text-danger mb-2"></i>
+                                    <p class="small text-muted">Cargando contenido...</p>
+                                </div>
+                            </div>
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/soyliagarrido/"
+                                data-instgrm-version="14" style="display: none;">
+                                <div style="padding:16px;">
+                                    <a href="https://www.instagram.com/soyliagarrido/"
+                                        style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                        target="_blank">
+                                        <div style="display: flex; flex-direction: row; align-items: center;">
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                            </div>
+                                            <div
+                                                style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                                <div
+                                                    style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                                </div>
+                                                <div
+                                                    style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p
+                                        style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                        <a href="https://www.instagram.com/soyliagarrido/"
+                                            style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                            target="_blank">@soyliagarrido</a>
+                                    </p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <a href="https://www.instagram.com/soyliagarrido/" target="_blank"
+                            class="btn btn-follow mt-3">Sígueme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---SECCION ALCANCE CON MI CONTENIDO-->
+    <section class="story-section py-5" id="estadisticas">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- Columna de texto -->
+                <div class="col-lg-4 text-center text-lg-start" data-aos="fade-right">
+                    <h2 class="story-title mb-3">Alcance con mi Contenido</h2>
+                    <p class="story-text mb-4">
+                        Con mi contenido podemos alcanzar una cantidad de interacciones y visulizaciones para tu marca o
+                        negocio
+                    </p>
+                    <a href="#precios" class="btn btn-follow">Precios Y Paquetes</a>
+                </div>
+
+                <!-- Imagen principal -->
+                <div class="col-lg-4 d-flex justify-content-center mb-4" data-aos="zoom-in">
+                    <div class="story-img-wrapper position-relative">
+                        <div class="oval-bg-story"></div>
+                        <img src="./img/lia_garrido2.PNG" alt="influencer" class="img-fluid position-relative z-2" />
+                    </div>
+                </div>
+
+                <!-- Estadísticas -->
+                <div class="col-lg-4 text-center text-lg-start d-flex flex-column justify-content-center gap-4 mt-5 mt-lg-0 pt-3 pt-lg-0 px-3"
+                    data-aos="fade-up">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <h3 class="stat-value"><span id="count-alcance">0</span>M<span class="text-pink">+</span>
+                            </h3>
+                            <p class="stat-label">Alcance</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="stat-value"><span id="count-interacciones">0</span>M<span
+                                    class="text-pink">+</span>
+                            </h3>
+                            <p class="stat-label">Interacciones</p>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center justify-content-lg-center">
+                            <div class="text-center">
+                                <h3 class="stat-value"><span id="count-visualizaciones">0</span>M<span
+                                        class="text-pink">+</span></h3>
+                                <p class="stat-label">Visualizaciones</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Iconos de redes sociales -->
+                    <div class="social-icons-section mt-4">
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="https://www.instagram.com/soyliagarrido/" target="_blank" class="social-icon-story"
+                                title="Instagram">
+                                <img src="./img/instagram.png" alt="Instagram" class="social-img">
+                            </a>
+                            <a href="https://www.tiktok.com/@soyliagarrido?is_from_webapp=1&sender_device=pc"
+                                target="_blank" class="social-icon-story" title="TikTok">
+                                <img src="./img/tiktok.png" alt="TikTok" class="social-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--SECCION DE VIDEOS DE MUESTRA-->
+    <section class="videos-section py-5 bg-light" id="videos">
+        <div class="container">
+            <h2 class="text-center mb-5">Mis Últimos Videos</h2>
+            <div class="row justify-content-center gy-3">
+
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="phone-frame">
+                        <img src="./img/iphone_contorno.PNG" alt="iPhone Frame" class="phone-image">
+                        <div class="video-container">
+                            <video class="plyr-video" muted>
+                                <source src="./media/video_lia_garrido1.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="phone-frame">
+                        <img src="./img/iphone_contorno.PNG" alt="iPhone Frame" class="phone-image">
+                        <div class="video-container">
+                            <video class="plyr-video" muted>
+                                <source src="./media/video_lia_garrido_2.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="phone-frame">
+                        <img src="./img/iphone_contorno.PNG" alt="iPhone Frame" class="phone-image">
+                        <div class="video-container">
+                            <video class="plyr-video" muted>
+                                <source src="./media/video_lia_garrido_3.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!--- POR SI SE OCUPA AGREGAR OTRO VIDEO
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="phone-frame">
+                        <img src="./img/iphone_contorno.PNG" alt="iPhone Frame" class="phone-image">
+                        <div class="video-container">
+                            <video class="plyr-video" muted>
+                                <source src="./media/video_prueba_4.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+    </section>
+    <section class="collaborations-section py-5 bg-influencer" id="colaboraciones">
+        <div class="container">
+            <h2 class="text-center mb-5">Colaboraciones Recientes</h2>
+
+            <!-- Carrusel de Colaboraciones-->
+            <div class="collaborations-carousel-wrapper">
+                <div class="owl-carousel owl-theme collaborations-carousel">
+                    <!-- Logos de Colaboraciones -->
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_eternal_secret.PNG" alt="Eternal Secret" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_garnier.PNG" alt="Garnier" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/loreal_logo.png" alt="Loreal" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_emma.PNG" alt="Emma" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_warnerbros.PNG" alt="WB" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_eticket.PNG" alt="Eticket" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_monster.PNG" alt="Monster" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_beerfest.PNG" alt="Beerfest" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_momovida.PNG" alt="Momovida" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_jardines_mexico.PNG" alt="Jardines de Mexico"
+                            class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_sav_bienesraices.PNG" alt="Bienes y Raices"
+                            class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_afun.PNG" alt="Afun" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_tier_holistic.PNG" alt="Holistic" class="img-fluid">
+                    </div>
+                    <div class="collaboration-item">
+                        <img src="./img/colaboraciones/colab_ximonth.PNG" alt="Ximonth" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PRECIOS UNITARIOS-->
+    <section class="precios-section py-5 bg-light" id="precios">
+        <div class="container">
+            <h2 class="text-center mb-1 titulo-precios">Precios Unitarios</h2>
+            <p class="text-center subtitulo-precios mb-5">* Representados en MXN</p>
+            <div class="row gy-5 justify-content-center text-center">
+
+                <!-- Precio 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+                    <h5 class="mb-3 tipo-servicio">TIKTOK HISTORIA</h5>
+                    <div class="phone-frame">
+                        <img src="./img/iphone_contorno.PNG" alt="iPhone Frame" class="phone-image">
+                        <div class="video-container">
+                            <video class="plyr-video" muted>
+                                <source src="./media/historia_tiktok_momo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p class="precio-servicio">$3,800</p>
+                </div>
+
+                <!-- Precio 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+                    <h5 class="mb-3 tipo-servicio">TIKTOK VIDEO</h5>
+                    <div class="phone-frame">
+                        <img src="./img/iphone_contorno.PNG" alt="iPhone Frame" class="phone-image">
+                        <div class="video-container">
+                            <video class="plyr-video" muted>
+                                <source src="./media/video_tiktok_loreal.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p class="precio-servicio">$5,800</p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+                    <h5 class="mb-3 tipo-servicio">INSTAGRAM HISTORY</h5>
+                    <div class="phone-frame">
+                        <img src="./img/iphone_contorno.PNG" alt="iPhone Frame" class="phone-image">
+                        <div class="video-container">
+                            <video class="plyr-video" muted>
+                                <source src="./media/historia_instagram_beerfest.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p class="precio-servicio">$1,200</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex flex-column align-items-center">
+                    <h5 class="mb-3 tipo-servicio">INSTAGRAM REEL</h5>
+                    <div class="phone-frame">
+                        <img src="./img/iphone_contorno.PNG" alt="iPhone Frame" class="phone-image">
+                        <div class="video-container">
+                            <video class="plyr-video" muted>
+                                <source src="./media/video_instagram_reel_garnier.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p class="precio-servicio">$2500</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PRECIOS Y PAQUETES-->
+    <section class="py-5 bg-light" id="paquetes">
+        <div class="container">
+            <h2 class="text-center mb-2 titulo-paquetes">PRECIOS Y PAQUETES</h2>
+            <p class="text-center subtitulo-paquetes">• PRECIOS REPRESENTADOS EN MXN</p>
+
+            <div class="row justify-content-center gy-4 mt-4">
+
+                <!-- Paquete 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card paquete-card h-100 text-center">
+                        <div class="card-header paquete-titulo">PAQUETE 1</div>
+                        <div class="card-body">
+                            <p><img src="img/tiktok.png" class="icono-red"> 1 TIKTOK</p>
+                            <p><img src="img/instagram.png" class="icono-red"> 1 HISTORIA</p>
+                            <p><img src="img/instagram.png" class="icono-red"> 1 REEL</p>
+                            <hr>
+                            <p><b>Sin Paquete : $9,500</b></p>
+                            <p>En Paquete: $7.900</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paquete 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card paquete-card h-100 text-center">
+                        <div class="card-header paquete-titulo">PAQUETE 2</div>
+                        <div class="card-body">
+                            <p><img src="img/instagram.png" class="icono-red"> SET 5 HISTORIAS</p>
+                            <p><img src="img/tiktok.png" class="icono-red"> 1 TIKTOK</p>
+                            <p>+ CONT. PAUTADO <br> (20–30 DÍAS)</p>
+                            <hr>
+                            <p><b>Sin Paquete : $9,800</b></p>
+                            <p>En Paquete: $8,2000 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paquete 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card paquete-card h-100 text-center">
+                        <div class="card-header paquete-titulo">PAQUETE 3</div>
+                        <div class="card-body">
+                            <p><img src="img/tiktok.png" class="icono-red"> 2 TIKTOK</p>
+                            <p>+ EXCLUSIVIDAD <br> (20–30 DÍAS)</p>
+                            <hr>
+                            <p><b>Sin Paquete : $12,100</b></p>
+                            <p>En Paquete: $10,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paquete 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card paquete-card h-100 text-center">
+                        <div class="card-header paquete-titulo">PAQUETE 4</div>
+                        <div class="card-body">
+                            <p><img src="img/tiktok.png" class="icono-red"> 1 TIKTOK</p>
+                            <p><img src="img/instagram.png" class="icono-red"> 1 REEL</p>
+                            <p><img src="img/instagram.png" class="icono-red"> SET 5 HISTORIAS</p>
+                            <p>+ CONT. PAUTADO + EXCLUSIVIDAD <br> (20–30 DÍAS)</p>
+                            <hr>
+                            <p><b>Sin Paquete : $15,300</b></p>
+                            <p>En Paquete: $12,200</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- Columna Izquierda: Imagen -->
+                <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-right">
+                    <div class="footer-img-wrapper position-relative">
+                        <div class="footer-oval-bg"></div>
+                        <img src="./img/lia_garrido1.PNG" alt="Arwa González"
+                            class="footer-img img-fluid position-relative z-2" />
+                    </div>
+                </div>
+
+                <!-- Columna Central: Texto -->
+                <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="footer-title mb-3">¡Trabajemos Juntos!</h2>
+                    <p class="footer-text mb-4">
+                        ¿Tienes una marca o un producto que quieres promocionar? Me encantaría colaborar
+                        contigo
+                        para crear contenido auténtico que conecte con mi audiencia.
+                    </p>
+
+                    <!-- Botones de Contacto -->
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-3">
+                        <!-- Botón WhatsApp -->
+                        <a href="https://wa.me/525510301218?text=Hola%20Lía%20Me%20gustaría%20colaborar%20contigo"
+                            target="_blank" class="btn btn-follow btn-contact-mobile text-center">
+                            <i class="bi bi-whatsapp me-2"></i>
+                            WhatsApp ¡NO RECIBO LLAMADAS!
+                        </a>
+
+                        <!-- Botón Email -->
+                        <a href="mailto:iegarridoc19@gmail.com?subject=Solicitud%20de%20Colaboración&body=Hola%20Lía,%0A%0AMe%20gustaría%20solicitar%20información%20sobre%20colaboraciones.%0A%0ASaludos"
+                            class="btn btn-follow btn-contact-mobile text-center">
+                            <i class="bi bi-envelope me-2"></i>
+                            Enviar correo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Redes Sociales -->
+                <div class="col-lg-4 text-center" data-aos="fade-left" data-aos-delay="200">
+                    <h4 class="footer-social-title mb-4">Sígueme en mis redes</h4>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                        <a href="https://www.instagram.com/soyliagarrido/" target="_blank" class="footer-social-icon"
+                            title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                            <span class="social-text-footer">@soyliagarrido</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@soyliagarrido?is_from_webapp=1&sender_device=pc"
+                            target="_blank" class="footer-social-icon" title="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                            <span class="social-text-footer">@soyliagarrido</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright mb-0">
+                        © 2025 Lia Garrido - Petfluencer y LifeStyle Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de librerías externas -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts de funcionalidades principales -->
+    <script src="js/init.js"></script>
+    <script src="js/counter-animation.js"></script>
+    <script src="js/plyr-config.js"></script>
+    
+    <!-- Scripts de interacción (carga después de las funcionalidades principales) -->
+    <script src="js/navbar-handler.js"></script>
+    <script src="js/social-embeds.js"></script>
+
+    <!-- TikTok embed script -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+
+</html>
