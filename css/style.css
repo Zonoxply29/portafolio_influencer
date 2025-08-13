@@ -416,6 +416,15 @@ section[id] {
   margin-right: auto;
 }
 
+/* Modo oscuro: icono hamburguesa y enlaces del menú en blanco */
+.dark-mode .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.dark-mode .navbar-toggler { border-color: rgba(255,255,255,0.5); }
+.dark-mode .navbar-nav .nav-link { color: #ffffff !important; }
+.dark-mode .navbar-nav .nav-link:hover { color: var(--pink) !important; }
+
 @media (min-width: 992px) {
   .navbar-nav {
     align-items: center;
@@ -1075,7 +1084,7 @@ section[id] {
   background-color: #fdf4f7;
   border: none;
   border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 15px;
 }
 
@@ -1471,5 +1480,144 @@ section[id] {
 .story-section {
   padding: 60px 0 !important; /* Ajustar sección de estadísticas */
 }
+
+/* ======= BOTÓN FLOTANTE MODO OSCURO ======= */
+.theme-toggle-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.08);
+  background: #ffffff;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  cursor: pointer;
+  z-index: 1100;
+  transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+.theme-toggle-btn .icon-sun,
+.theme-toggle-btn .icon-moon {
+  position: absolute;
+  font-size: 1.25rem;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+/* Mostrar luna por defecto (modo claro), sol oculto */
+.theme-toggle-btn .icon-moon { opacity: 1; transform: rotate(0deg) scale(1); }
+.theme-toggle-btn .icon-sun { opacity: 0; transform: rotate(-45deg) scale(0.6); }
+
+/* Cuando está activo el modo oscuro, mostrar sol */
+.dark-mode .theme-toggle-btn {
+  background: #1f1f23;
+  border-color: rgba(255,255,255,0.12);
+  color: #ffd369;
+}
+
+.dark-mode .theme-toggle-btn .icon-moon { opacity: 0; transform: rotate(45deg) scale(0.6); }
+.dark-mode .theme-toggle-btn .icon-sun { opacity: 1; transform: rotate(0deg) scale(1); color: #ffd369; }
+
+/* ======= MODO OSCURO: TOKENS Y OVERRIDES ======= */
+:root {
+  --bg: #FDF4F7;
+  --card: #ffffff;
+  --text: #2b2b2b;
+  --muted: #666666;
+  --pink: #ff6e84;
+  --border: #ffb6c1;
+}
+
+.dark-mode {
+  --bg: #111214;
+  --card: #1a1b1e;
+  --text: #e9e9ea;
+  --muted: #a7a7ab;
+  --pink: #ff6e84; /* mantenemos marca */
+  --border: #2a2b31;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Backgrounds principales */
+body { background-color: var(--bg); color: var(--text); }
+.bg-influencer { background-color: var(--bg); }
+.hero-section { background-color: var(--card); }
+.videos-section.bg-light,
+.precios-section.bg-light,
+.py-5.bg-light,
+.footer-section.bg-light { background-color: var(--card) !important; }
+
+/* Navbar */
+.custom-navbar { background-color: color-mix(in srgb, var(--bg) 95%, transparent) !important; }
+.nav-link { color: var(--text); }
+.nav-link:hover { color: var(--pink); }
+.navbar-toggler { border-color: rgba(255, 255, 255, 0.15); }
+.navbar-collapse { background-color: color-mix(in srgb, var(--bg) 98%, transparent); }
+
+/* Texto y títulos */
+.section-title,
+.story-title,
+.footer-title,
+.influencer-name { color: var(--text); }
+.hero-description { color: var(--muted); border-left-color: var(--pink); }
+.social-text { color: var(--text); }
+.stat-value { color: var(--text); }
+.stat-label { color: var(--muted); }
+
+/* Tarjetas y contenedores */
+.stats-card { background-color: var(--card); border-color: var(--border); }
+.tiktok-placeholder,
+.instagram-placeholder { background-color: #202226; border-color: #2f3238; }
+.footer-section { background: linear-gradient(135deg, color-mix(in srgb, var(--bg) 100%, #000 0%), color-mix(in srgb, var(--bg) 90%, #000 10%)); border-top-color: var(--border); }
+.footer-text, .social-text-footer { color: var(--muted); }
+.footer-social-icon { background-color: var(--card); border-color: var(--pink); }
+.footer-social-icon i { color: var(--pink); }
+
+/* Botones */
+.btn-follow { background-color: var(--pink); color: #fff; }
+.btn-follow:hover { background-color: #e0556d; }
+.btn-outline-pink { border-color: var(--pink); color: var(--pink); }
+.btn-outline-pink:hover { background-color: color-mix(in srgb, var(--pink) 15%, transparent); }
+
+/* Elementos decorativos que usan color claro */
+.corner-line { border-color: var(--pink); }
+.influencer-name { background-color: var(--bg); }
+
+/* Ajustes solicitados: títulos del hero y marca en navbar en blanco en modo oscuro */
+.dark-mode .hero-title,
+.dark-mode .title-container,
+.dark-mode .name-title,
+.dark-mode .petfluencer-title { color: #ffffff !important; }
+
+.dark-mode .navbar-brand { color: #ffffff !important; }
+.dark-mode .navbar-brand:hover { color: #ffffff !important; }
+
+/* Story text en blanco en modo oscuro para mejor contraste */
+.dark-mode .story-text { color: #ffffff !important; }
+
+/* Subtítulo de paquetes en blanco en modo oscuro */
+.dark-mode .subtitulo-paquetes { color: #ffffff !important; }
+
+/* Contorno de logos de colaboraciones en modo oscuro */
+.dark-mode .collaborations-section .img-fluid {
+  background-color: transparent !important;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.20)) !important;
+}
+
+/* Footer: título "Sígueme en mis redes" en color de marca en modo oscuro */
+.dark-mode .footer-social-title { color: #ff6e84 !important; }
+
+/* Footer: copyright en blanco en modo oscuro */
+  .dark-mode .footer-section .footer-copyright { color: #ffffff !important; }
 
 
