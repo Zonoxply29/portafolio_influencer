@@ -12,6 +12,12 @@
     url("../fonts/jamgrotesque-bold.otf") format("truetype");
     font-display: swap;
 }
+@font-face{
+    font-family: "Revamped";
+    src: 
+    url("../fonts/Revamped.otf") format("truetype");
+    font-display: swap;
+}
 html, body {
   overflow-x: hidden;
   max-width: 100%;
@@ -48,6 +54,36 @@ section[id] {
 
 .navbar-brand .dot {
   color: #ff6e84;
+}
+
+/* Estilos para el enlace de Gisea */
+.gisea-link {
+  font-size: 0.8rem;
+  color: #888;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.gisea-link:hover {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+/* Estilo específico para el texto "Gisea" con fuente Revamped */
+.gisea-brand {
+  font-family: "Revamped", sans-serif;
+  font-weight: normal;
+}
+
+/* Estilo para el logo de Gisea */
+.gisea-logo {
+  height: 19px;
+  width: auto;
+  margin-left: -1px;
+  margin-bottom: 2px;
+  vertical-align: middle;
 }
 
 .nav-link {
@@ -1619,5 +1655,9 @@ body { background-color: var(--bg); color: var(--text); }
 
 /* Footer: copyright en blanco en modo oscuro */
   .dark-mode .footer-section .footer-copyright { color: #ffffff !important; }
+
+/* Enlace de Gisea en modo oscuro */
+.dark-mode .gisea-link { color: #ccc !important; }
+.dark-mode .gisea-link:hover { color: var(--pink) !important; }
 
 
