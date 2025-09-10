@@ -58,12 +58,22 @@ section[id] {
 
 /* Estilos para el enlace de Gisea */
 .gisea-link {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #888;
   text-decoration: none;
   font-weight: 400;
   transition: color 0.3s ease;
   line-height: 1;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/* Posicionamiento en desktop */
+@media (min-width: 992px) {
+  .gisea-link {
+    margin-top: 0;
+    margin-left: 1.5rem;
+  }
 }
 
 .gisea-link:hover {
@@ -79,9 +89,9 @@ section[id] {
 
 /* Estilo para el logo de Gisea */
 .gisea-logo {
-  height: 19px;
+  height: 22px;
   width: auto;
-  margin-left: -1px;
+  margin-left: 4px;
   margin-bottom: 2px;
   vertical-align: middle;
 }
