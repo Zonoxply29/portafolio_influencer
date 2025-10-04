@@ -302,9 +302,6 @@ section[id] {
   border-radius: 68% / 50%;
   position: relative;
   z-index: 2;
-  /* Optimizaciones para carga de imagen */
-  aspect-ratio: 320 / 420;
-  min-height: 420px;
 }
 
 /* Líneas tipo marco */
