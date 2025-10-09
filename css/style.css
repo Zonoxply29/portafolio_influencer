@@ -1573,6 +1573,94 @@ section[id] {
 .dark-mode .theme-toggle-btn .icon-moon { opacity: 0; transform: rotate(45deg) scale(0.6); }
 .dark-mode .theme-toggle-btn .icon-sun { opacity: 1; transform: rotate(0deg) scale(1); color: #ffd369; }
 
+/* ======= BOTÓN FLOTANTE SCROLL TO TOP ======= */
+.scroll-to-top-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 85px; /* Posicionado arriba del botón de tema */
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 110, 132, 0.2);
+  background: linear-gradient(135deg, #ff6e84, #ff8fa3);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(255, 110, 132, 0.3);
+  cursor: pointer;
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  font-size: 1.25rem;
+}
+
+.scroll-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-to-top-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 110, 132, 0.4);
+  background: linear-gradient(135deg, #ff5a78, #ff7a95);
+}
+
+.scroll-to-top-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .scroll-to-top-btn {
+    right: 15px;
+    bottom: 75px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+  
+  .theme-toggle-btn {
+    right: 15px;
+    bottom: 15px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Ajuste para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .scroll-to-top-btn {
+    right: 12px;
+    bottom: 70px;
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+  
+  .theme-toggle-btn {
+    right: 12px;
+    bottom: 12px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Modo oscuro para scroll-to-top */
+.dark-mode .scroll-to-top-btn {
+  background: linear-gradient(135deg, #ff6e84, #ff8fa3);
+  border-color: rgba(255, 110, 132, 0.3);
+  box-shadow: 0 6px 18px rgba(255, 110, 132, 0.25);
+}
+
+.dark-mode .scroll-to-top-btn:hover {
+  background: linear-gradient(135deg, #ff5a78, #ff7a95);
+  box-shadow: 0 12px 30px rgba(255, 110, 132, 0.35);
+}
+
 /* ======= MODO OSCURO: TOKENS Y OVERRIDES ======= */
 :root {
   --bg: #FDF4F7;
